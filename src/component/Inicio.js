@@ -1,7 +1,15 @@
 import React from 'react'
 import '../style/inicio.css'
 
-function Inicio () {
+function Inicio ({estadoMenu}) {
+
+  if(estadoMenu){
+    document.querySelector('.inicioContenedor').classList.add('closeInicio'); {/* ocultamos el inicio al abrir el menu*/}
+  }
+  else{
+    document.querySelector('.inicioContenedor').classList.remove('closeInicio'); {/* mostramos el inicio al cerrar el menu*/}
+  }
+
   return (
     <div className='inicioContenedor'>
         <p className='inicioTitulo'>  Hola, soy Tobías Banno</p>

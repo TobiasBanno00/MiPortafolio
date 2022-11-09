@@ -53,11 +53,11 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #000000ba;
     display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: linear-gradient(to left, #000000e6 0%, #000000e9 100%);
 }
 
 .openMenu{
@@ -100,15 +100,12 @@
     }
 
    .hamburger{
-    display: block;
+        display: block;
    }
 
    .imgMenu{
-     
-    min-width: 120px;
-    width: 17vh;
-
-    
+        min-width: 120px;
+        width: 17vh;
     }
 
     .botonMenu{

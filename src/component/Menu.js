@@ -1,15 +1,20 @@
-import React , {useState}from 'react'
+import React from 'react'
 import '../style/menu.css'
 import TB from '../img/TobiasBanno.jfif'
 import { FiAlignJustify } from "react-icons/fi";
 
-function Menu() {
+function Menu({setEMenu}) {
 
     function manejoMenu(){
 
-      document.querySelector('.menu-resp').classList.contains('openMenu')?document.querySelector('.menu-resp').classList.remove('openMenu')
-      :document.querySelector('.menu-resp').classList.add('openMenu');
-   
+      if(document.querySelector('.menu-resp').classList.contains('openMenu')){
+        document.querySelector('.menu-resp').classList.remove('openMenu')
+        setEMenu(false)  
+      }
+      else{
+        document.querySelector('.menu-resp').classList.add('openMenu')
+        setEMenu(true);  
+      }
     };
 
   return (
