@@ -1,0 +1,53 @@
+.inicioContenedor{
+    margin-top: 2vh; 
+    margin-left: 13vw;
+    margin-right: 0.5vw; 
+    width: 100 vw;
+    height: 96vh;
+    background-color: rgba(0, 0, 0, 0.783);
+    
+}
+
+.inicioTitulo{
+
+    margin: 0;
+    padding-top: 15vh;
+    text-align: center;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: 12vh;
+    color: rgb(255, 255, 255);
+}
+.inicioTitulo::first-letter{
+    color: #3f5b33;
+    font-weight: 600;
+    font-size: 19vh;
+}
+
+.inicioSubTitulo{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: 11vh;
+    color: rgb(255, 255, 255);
+}
+
+.inicioSubTitulo::first-letter{
+    color: #3f5b33;
+    font-weight: 700;
+    font-size:17vh;
+}
+
+.inicioPie{
+
+    position: absolute;
+    bottom: 0;
+    margin: 60px;
+    text-align:left;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+}
