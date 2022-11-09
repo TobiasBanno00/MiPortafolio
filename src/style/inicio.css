@@ -1,10 +1,7 @@
 .inicioContenedor{
-    margin-top: 2vh; 
-    margin-left: 13vw;
-    margin-right: 0.5vw; 
-    width: 100 vw;
-    height: 96vh;
-    background-color: rgba(0, 0, 0, 0.783);
+    margin-top: 0; 
+    margin-left: 150px; 
+    height: 100vh;
     
 }
 
@@ -26,7 +23,7 @@
 
 .inicioSubTitulo{
     margin: 0;
-    padding-top: 20px;
+    padding-top: 7vh;
     text-align: center;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -42,12 +39,77 @@
 
 .inicioPie{
 
-    position: absolute;
-    bottom: 0;
-    margin: 60px;
+    margin: 0 7vw;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
     text-align:left;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
     font-size: 3vh;
     color: rgb(255, 255, 255);
+}
+
+
+/* -----------RESPONSIVEEE */
+
+@media screen and (max-width: 1050px)
+{
+    
+    .inicioContenedor{
+        margin-left: 0;    
+    }
+
+    .inicioTitulo{
+        padding-top: 20vh;
+        font-size: 8vw;
+    }
+    .inicioTitulo::first-letter{
+        font-size: 10vw;
+    }
+
+    .inicioSubTitulo{
+        padding-top: 12vh;
+        font-size: 7.5vw;
+    }
+    .inicioSubTitulo::first-letter{
+        font-size: 9.5vw;
+    }
+
+    .inicioPie{
+        font-size: 3vw;
+        text-align: center;
+        padding-top: 20vh;
+    }
+    
+}
+
+@media screen and (max-width: 600px)
+{
+    
+    .inicioContenedor{
+        margin-left: 0;    
+    }
+
+    .inicioTitulo{
+        padding-top: 18vh;
+        font-size: 11vw;
+    }
+    .inicioTitulo::first-letter{
+        font-size: 13vw;
+    }
+
+    .inicioSubTitulo{
+        padding-top: 12vh;
+        font-size: 10vw;
+    }
+    .inicioSubTitulo::first-letter{
+        font-size: 12vw;
+    }
+
+    .inicioPie{
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 22vh;
+    }
+    
 }

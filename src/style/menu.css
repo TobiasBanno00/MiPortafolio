@@ -6,7 +6,7 @@
     left: 0;
     width: 150px;
     height: 100vh;
-    background-image: linear-gradient(to right, #000000 0%, #000000df 100%);
+    background-image: linear-gradient(to right, #000000 0%, #000000 100%);
 
     display: flex;
     flex-direction:column;
@@ -15,7 +15,7 @@
 
 
 .imgMenu{
-    margin: 3vh 0;
+    margin: 4vh 0;
     width: 120px;
     border-radius: 5%;    
 }
@@ -70,7 +70,7 @@
     display: none;
     color: #ffffff;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 70px;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -83,6 +83,13 @@
  .menu-resp{
     display:none;
  }   
+}
+
+@media screen and (max-width: 600px)
+{   
+    .hamburger{
+        font-size: 50px;
+    }
 }
 
 

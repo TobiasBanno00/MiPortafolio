@@ -1,9 +1,7 @@
 body{
-  background-image: linear-gradient(to left, #000000a7 0%, #00000093 100%), url(./img/1010102.jpg);
+  background-image: linear-gradient(to left, #000000e6 0%, #000000e9 100%), url(./img/1010102.jpg);
   background-position: center;
   background-size: cover; /* Cambie el tamaño de la imagen de fondo para cubrir todo el contenedor */
+  margin: 0;
 
-  /* margin-top: 2vh; 
-  margin-left: 13vw;
-  margin-right: 0.5vw; */
 }
