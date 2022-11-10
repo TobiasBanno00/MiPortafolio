@@ -13,13 +13,16 @@ function App() {
   console.log(estadoMenu)
  }
 
+ let NotFound=()=>{return <>Pagina no existente</>;}
+
   return (
     <>
       <Menu setEMenu={setEMenu}/> 
       <Router>
         <Routes>
           <Route path="/" element={<Inicio estadoMenu={estadoMenu}/>}/>
-          <Route path="/sobre-mi" element={<SobreMi estadoMenu={estadoMenu}/>}/>
+          <Route path="/sobreMi" element={<SobreMi estadoMenu={estadoMenu}/>}/>
+          <Route path="*" component={NotFound}/>
         </Routes>
       </Router>
       

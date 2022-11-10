@@ -21,7 +21,7 @@ function Menu({setEMenu}) {
     <nav>
         
         <div className='menu'>
-            <img className='imgMenu' src={TB} alt='Tobias Banno' /> 
+            <img className='imgMenu'  src={TB} alt='Tobias Banno' />
             <a href='/sobreMi' className='botonMenu'> Sobre mi</a>
             <a href='/habilidades' className='botonMenu'>Habilidades</a>
             <a href='/proyector' className='botonMenu'>Proyectos</a>

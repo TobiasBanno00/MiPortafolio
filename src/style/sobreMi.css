@@ -7,38 +7,144 @@
     flex: auto;   
 }
 
-.sobreMi-contenedor div{
-    flex: 1 1; 
-}
 
 .sobreMi-datos{
-    margin: 0 50px;
+    margin: 0 5vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
 }
 
 .sobreMi-titulo{
     font-size: 3.5vw;
     text-align: center;
     color: #3f5b33;
-    text-shadow: -1px 1px #000000, -1px -1px #000000, 1px -1px #000000, 1px 1px #000000, 3px 3px #ffffff;
+    text-shadow:2px 2px hsl(98, 13%, 49%);
+    user-select:none;
+
+}
+
+.sobreMi-titulo span { 
+    display:inline-block; 
+    animation:mov 0.5s ease-in-out infinite; 
+    
+}
+
+.sobreMi-titulo:hover span { 
+    animation:pulso .6s; 
 }
 
 .sobreMi-info{
-    font-size: 1.3vw;
-    text-align:justify;
+    font-size: 1.2vw;
+    text-align:left;
     color: #fff;
+    overflow: hidden;
+    animation: muestra 5s linear 1.5s 1 normal both
 }
 
 .sobreMi-ubicacion{
+    margin: 0 7vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-iframe{
+
+.sobreMi-ubicacion iframe{
+    border: 0.3vw solid #3f5b33;
+    border-radius: 0.5vw;
     margin-bottom: 4vh;
+    min-width: 400px;
+    width:28vw;
+    height:60vh; 
+    
+}
+
+/* ANIMACIONES TITULO*/
+@keyframes mov {
+    0%,100%{ transform:none; }
+    33%{ transform:translateY(-2px) rotate(-2deg); }
+    66%{ transform:translateY(2px) rotate(2deg); }
+}
+
+       
+@keyframes pulso {
+    
+    0%,100%{ transform:translate(0);  }
+    25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg);  }
+    50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+}
+       
+       
+@keyframes muestra {
+    from {
+      height: 0;
     }
+    to {
+      height: 100%;
+    }
+}
+
+/* RESPONSIVEEEEEEEEEEE */
+
+@media screen and (min-width: 1200px)
+{
+    .sobreMi-contenedor{
+        flex-direction: row !important;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    
+    .sobreMi-contenedor{
+        margin: 0 8vw;
+        flex-direction: column;   
+        justify-content: flex-start;
+    }
+
+    .sobreMi-titulo{
+        margin-top:7vh;
+        margin-bottom: 5vh;
+        font-size: 6vw;
+    }
+
+    .sobreMi-info{
+        font-size: 1.5vw;
+        animation: none
+    }
+
+    .sobreMi-ubicacion iframe{
+        
+        width:50vw;
+        height:25vh; 
+    }
+
+    @media screen and (max-width: 700px)
+    {
+        .sobreMi-titulo{
+
+            font-size: 8vw;
+        }
+    
+        .sobreMi-info{
+            font-size: 2.2vw;
+            animation: none
+        }
+    
+        .sobreMi-ubicacion iframe{
+            
+            width:60vw;
+            height:35vh; 
+        }
+    }
+
+
+    
+    
+
+
+
+    
+}
