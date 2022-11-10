@@ -1,7 +1,10 @@
 body{
-  background-image: linear-gradient(to left, #000000e6 0%, #000000e9 100%), url(./img/1010102.jpg);
-  background-position: center;
-  
+  background-image: linear-gradient(to left, #000000e6 0%, #000000f0 100%), url(./img/1010102.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important; /* Cambie el tamaño de la imagen de fondo para cubrir todo el contenedor */
   margin: 0;
+  height: 100vh;
+
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 }

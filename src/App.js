@@ -2,6 +2,8 @@ import './App.css';
 import React,{useState} from 'react';
 import Menu from './component/Menu'
 import Inicio from './component/Inicio'
+import SobreMi from './component/SobreMi'
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; /* Routes=switch */
 
 function App() {
 
@@ -14,7 +16,13 @@ function App() {
   return (
     <>
       <Menu setEMenu={setEMenu}/> 
-      <Inicio estadoMenu={estadoMenu}/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Inicio estadoMenu={estadoMenu}/>}/>
+          <Route path="/sobre-mi" element={<SobreMi estadoMenu={estadoMenu}/>}/>
+        </Routes>
+      </Router>
+      
    </>
   );
 }

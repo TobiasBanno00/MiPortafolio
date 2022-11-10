@@ -4,9 +4,9 @@ import TB from '../img/TobiasBanno.jfif'
 import { FiAlignJustify } from "react-icons/fi";
 
 function Menu({setEMenu}) {
-
+  
     function manejoMenu(){
-
+      
       if(document.querySelector('.menu-resp').classList.contains('openMenu')){
         document.querySelector('.menu-resp').classList.remove('openMenu')
         setEMenu(false)  
@@ -15,7 +15,7 @@ function Menu({setEMenu}) {
         document.querySelector('.menu-resp').classList.add('openMenu')
         setEMenu(true);  
       }
-    };
+    }; 
 
   return (
     <nav>

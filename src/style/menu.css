@@ -57,7 +57,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: linear-gradient(to left, #000000e6 0%, #000000e9 100%);
 }
 
 .openMenu{
@@ -78,7 +77,7 @@
 }
 
 
-@media screen and (min-width: 1050px)
+@media screen and (min-width: 1200px)
 {
  .menu-resp{
     display:none;
@@ -93,7 +92,7 @@
 }
 
 
-@media screen and (max-width: 1050px)
+@media screen and (max-width: 1200px)
 {
     .menu{
         display: none;

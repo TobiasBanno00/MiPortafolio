@@ -1,0 +1,44 @@
+.sobreMi-contenedor{
+    margin-top: 0; 
+    margin-left: 150px; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    flex: auto;   
+}
+
+.sobreMi-contenedor div{
+    flex: 1 1; 
+}
+
+.sobreMi-datos{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreMi-titulo{
+    font-size: 3.5vw;
+    text-align: center;
+    color: #3f5b33;
+    text-shadow: -1px 1px #000000, -1px -1px #000000, 1px -1px #000000, 1px 1px #000000, 3px 3px #ffffff;
+}
+
+.sobreMi-info{
+    font-size: 1.3vw;
+    text-align:justify;
+    color: #fff;
+}
+
+.sobreMi-ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe{
+    margin-bottom: 4vh;
+    }
