@@ -1,6 +1,6 @@
 import React from 'react'
 import '../style/menu.css'
-import TB from '../img/TobiasBanno.jfif'
+import TB from '../img/programador.png'
 import { FiAlignJustify } from "react-icons/fi";
 
 function Menu({setEMenu}) {
@@ -21,7 +21,7 @@ function Menu({setEMenu}) {
     <nav>
         
         <div className='menu'>
-            <img className='imgMenu'  src={TB} alt='Tobias Banno' />
+            <a href='/'><img className='imgMenu'  src={TB} alt='Tobias Banno' /></a>
             <a href='/sobreMi' className='botonMenu'> Sobre mi</a>
             <a href='/habilidades' className='botonMenu'>Habilidades</a>
             <a href='/proyector' className='botonMenu'>Proyectos</a>
@@ -33,7 +33,7 @@ function Menu({setEMenu}) {
 
         <div className='hamburger' onClick={manejoMenu}> <a><FiAlignJustify/></a></div>
         <div className='menu-resp'>
-            <img className='imgMenu' src={TB} alt='Tobias Banno' /> 
+            <a href='/'><img className='imgMenu'  src={TB} alt='Tobias Banno' /></a>
             <a href='/sobreMi' className='botonMenu'> Sobre mi</a>
             <a href='/habilidades' className='botonMenu'>Habilidades</a>
             <a href='/proyector' className='botonMenu'>Proyectos</a>

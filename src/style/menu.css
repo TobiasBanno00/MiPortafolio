@@ -16,7 +16,7 @@
 
 .imgMenu{
     margin: 4vh 0;
-    width: 120px;
+    width: 180px;
     border-radius: 5%;    
 }
 
@@ -27,22 +27,20 @@
     padding: 5vh 0;
     text-decoration: none;
     color: #ffffff;
-    font-size: 15px;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-size: 20px;
     transition: all ease-in-out .3s;
-    border-bottom: 1px solid #1e1e1e ;
+    border-top: 1px solid #1e1e1e ;
 
     
 }
 
-.botonMenu:first-of-type{
-    border-top: 1px solid #1e1e1e;
+.botonMenu:nth-child(5){
+    border-bottom: 1px solid #1e1e1e;
 }
 
 
 .botonMenu:hover{
-    color: #3f5b33;
+    color: #87c6e4;
     font-size: 20px;
 }
 
@@ -104,7 +102,7 @@
 
    .imgMenu{
         min-width: 120px;
-        width: 17vh;
+        width: 22vh;
     }
 
     .botonMenu{

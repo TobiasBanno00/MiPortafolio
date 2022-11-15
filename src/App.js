@@ -3,6 +3,8 @@ import React,{useState} from 'react';
 import Menu from './component/Menu'
 import Inicio from './component/Inicio'
 import SobreMi from './component/SobreMi'
+import Habilidades from './component/Habilidades'
+import Cargando from './component/Cargando'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; /* Routes=switch */
 
 function App() {
@@ -17,14 +19,21 @@ function App() {
 
   return (
     <>
+    
       <Menu setEMenu={setEMenu}/> 
+      
       <Router>
+      <Cargando/>
         <Routes>
           <Route path="/" element={<Inicio estadoMenu={estadoMenu}/>}/>
           <Route path="/sobreMi" element={<SobreMi estadoMenu={estadoMenu}/>}/>
+          <Route path="/habilidades" element={<Habilidades estadoMenu={estadoMenu}/>}/>
           <Route path="*" component={NotFound}/>
         </Routes>
       </Router>
+   
+
+
       
    </>
   );

@@ -1,0 +1,92 @@
+.habilidades-contenedor{
+    margin-top: 0; 
+    margin-left: 150px; 
+    height: 100vh; 
+    display: flex;
+    
+    justify-content: center;
+    animation:cargandoPagina 5s;
+}
+
+.habilidades-contenedor div{
+    flex: 1 1;
+}
+
+.habilidades-info{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades-titulo{
+    margin: 8vh 0;
+    text-align:center;
+    font-size: 4vw;
+    color: #3f5b33;
+    text-shadow:2px 2px hsl(98, 13%, 49%);
+}
+
+
+.habilidades-data{
+    margin: 4vh 4vw;
+    color: #fff;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+
+.habilidades-contSkills{
+    margin: 4vh 0;
+}
+
+.habilidades-skill{
+    margin: 5vh 2vw;
+    font-size: 2.5vw;
+    color: #fff;
+}
+
+.habilidades-skill:nth-child(1){
+    text-align: start;
+    animation:cambioColor 1.5s linear  alternate-reverse  infinite;
+}
+
+
+
+.habilidades-skill:nth-child(2){
+    text-align: center;
+    
+}
+
+.habilidades-skill:nth-child(3){
+text-align: end;
+}
+
+.habilidades-skill:nth-child(4){
+    text-align: center;
+}
+
+.habilidades-skill:nth-child(5){
+    text-align: start;
+}
+
+.habilidades-skill:nth-child(6){
+    text-align: center;
+}
+
+.habilidades-skill:nth-child(7){
+    text-align: end;
+}
+
+.habilidades-skill:nth-child(8){
+    text-align: center;
+}
+
+@keyframes cambioColor{
+    0% {color: #3f5b33;} 
+   20% {color: #516b46;} 
+   60% {color: #708467;} 
+   75% {color: #a9b2a5;} 
+  100% {color: #ffffff;} 
+}
+
+

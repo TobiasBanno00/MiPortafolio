@@ -1,77 +1,67 @@
 .inicio-contenedor{
     margin-top: 0; 
     margin-left: 150px; 
-    height: 100vh;    
     
 }
 
 .inicio-titulo{
-
     margin: 0;
-    padding-top: 10vh;
-    text-align: center;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-    font-size: 6vw;
-    color: rgb(255, 255, 255);
-}
-.inicio-titulo::first-letter{
-    color: #3f5b33;
-    letter-spacing: 0.8vw;
-    text-shadow: 0px 0px #3f5b33, -0px -0px #3f5b33, 0px -0px#3f5b33, 0px 0px #3f5b33, 0.4vw 0.4vw #ffffff;
-    font-weight: 600;
-    font-size: 8vw;
-}
-
-.inicio-subTitulo{
-    margin: 0;
-    padding-top: 7vh;
-    text-align: center;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    margin-left: 3.5vw;
+    text-align: left;
     font-size: 5vw;
     color: rgb(255, 255, 255);
+    text-shadow: 0px 0px #000000, 0px -0px #000000, 0px -0px#000000, 0px 0px #000000, 0.4vw 0.4vw #000000;
 }
 
-.inicio-subTitulo::first-letter{
-    color: #3f5b33;
+.inicio-titulo span{
+    display:inline-block; 
+    animation:inicio-mov 0.8s ease-in-out infinite; 
+    color: #87c6e4;
     letter-spacing: 0.8vw;
-    text-shadow: 0px 0px #3f5b33, -0px -0px #3f5b33, 0px -0px#3f5b33, 0px 0px #3f5b33, 0.4vw 0.4vw #ffffff;
-    font-weight: 600;
-    font-size:8vw;
+    text-shadow: 1vw 1vw 1vw #000000;
+    font-size: 8vw;
+    
 }
+
+.inicio-titulo:nth-child(1)
+{
+    padding-top: 12vh;
+}
+
+.inicio-titulo:nth-child(2){
+    
+    animation: inicio-escribir 2s steps(38) 1.5s 1 normal both;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.inicio-titulo:nth-child(3){
+    animation: inicio-escribir 2s steps(38) 2.5s 1 normal both;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 
 .inicio-pie{
 
-    padding-top: 24vh;
-    padding-bottom: 5vh;
-    margin: 0 5vw;
+    position: absolute;
+    bottom: 0;
+    margin: 10vh 7vw;
     text-align:left;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
     font-size: 1.5vw;
     color: rgb(255, 255, 255);
+    text-shadow: 0.5vw 0.5vw 0.5vw #000000;
     
 
 }
-
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
 
 
 
 
 /* -----------RESPONSIVEEE */
 
-.closeInicio{
-    display: none;
-}
 
 @media screen and (min-width: 1200px)
 {
@@ -84,29 +74,29 @@
 {
     
     .inicio-contenedor{
-        margin-left: 0;    
+        margin-left:0;    
     }
 
     .inicio-titulo{
-        padding-top: 18vh;
-        font-size: 7.5vw;
-    }
-    .inicio-titulo::first-letter{
-        font-size: 9.5vw;
+        margin-left:4vw;
+        font-size: 8vw;
     }
 
-    .inicio-subTitulo{
-        padding-top: 12vh;
-        font-size: 7vw;
+    .inicio-titulo:nth-child(1)
+    {
+    padding-top: 16vh;
     }
-    .inicio-subTitulo::first-letter{
-        font-size: 9vw;
+
+    .inicio-titulo span{
+        margin-bottom: 3vh;
+        font-size: 11vw;
+        
     }
 
     .inicio-pie{
-        font-size: 2.5vw;
+        font-size: 3vw;
         text-align: center;
-        padding-top: 19vh;
+
     }
     
 }
@@ -119,28 +109,33 @@
     }
 
     .inicio-titulo{
-        padding-top: 17vh;
-        font-size: 11vw;
-    }
-    .inicio-titulo::first-letter{
-        font-size: 13vw;
+        margin-left:4vw;
+        font-size: 8vw;
     }
 
-    .inicio-subTitulo{
-        padding-top: 12vh;
-        font-size: 10vw;
-    }
-    .inicio-subTitulo::first-letter{
-        font-size: 12vw;
+    .inicio-titulo span{
+    
+        font-size: 14vw;
+        
     }
 
     .inicio-pie{
-        font-size: 3.5vw;
+        font-size: 5vw;
         text-align: center;
-        padding-top: 22vh;
+
     }
     
 }
 
+/* animaciones */
+@keyframes inicio-mov {
+    0%,100%{ transform:none; }
+    33%{ transform:translateY(-4px)}
+    66%{ transform:translateY(4px)}
+}
 
-  
+@keyframes inicio-escribir {
+    from { width: 0 }
+    to { width:100% }
+}
+
