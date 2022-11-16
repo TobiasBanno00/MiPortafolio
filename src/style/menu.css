@@ -41,7 +41,11 @@
 
 .botonMenu:hover{
     color: #87c6e4;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.menu-pagActual{
+    color:#87c6e4
 }
 
 /* RESPONSIVEEEE */
