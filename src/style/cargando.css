@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
-    animation: terminado 1.5s 1.5s  linear both;
+    animation: terminado 0.5s 1s  linear both;
 
 }
 
@@ -64,7 +64,7 @@
 @keyframes terminado{
 
     100%{
-        transform:translatey(-5000px);
+        transform:translatey(-100%);
         display: none !important;
         
     }

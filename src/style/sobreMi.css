@@ -27,6 +27,11 @@
     animation:pulso 4s linear infinite; 
 }
 
+.sobreMi-datos .sobreMi-titulo::first-letter{
+   color: #9c0404;
+}
+
+
 
 
 .sobreMi-info{
@@ -35,8 +40,11 @@
     text-align:left;
     color: #fff;
     overflow: hidden;
-    animation: muestra 3s linear 1.5s 1  both
+    animation: muestra 4s linear 1.7s 1  both
 }
+
+
+
 
 .sobreMi-ubicacion{
     margin: 0 7vw;
