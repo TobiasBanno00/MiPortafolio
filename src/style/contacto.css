@@ -1,0 +1,202 @@
+.contacto-contenedor{
+        margin-top: 9vh; 
+        margin-left: 150px;    
+}
+
+    .contenedor-info{
+        margin-left:8vw;
+        display: flex;
+    }
+
+.contenedor-encabezado{
+    width: 33vw;
+}
+
+.contacto-titulo{
+    color: #696767;
+    text-shadow: 0px 0px #000000, 0px -0px #000000, 0px -0px#000000, 0px 0px #000000, 0.4vw 0.4vw #000000;
+    font-size: 4vw;
+    text-align: left;
+    animation:contacto-mov 0.8s ease-in-out infinite; 
+}
+
+.contacto-titulo::first-letter{
+    color: #87c6e4;
+}
+
+.contacto-pie{
+    color: #ffffff;
+    font-size: 1.7vw;
+}
+
+.contacto-medios{
+    text-align: center;
+    margin-left: 9vw;
+    padding: 2vw 0;
+    margin-top: 5vh;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+
+}
+
+.contacto-info h3{
+    display: inline-block;
+    color: #fffcfc;
+    font-size: 3vw;
+    margin-right: 0.5vw;
+    margin-top:5vh;
+    margin-bottom:0;
+    
+    
+}
+
+.contacto-info {
+    color:rgb(131, 130, 130);
+    font-size: 1.7vw;
+    font-weight: 500;
+    
+}
+
+.contacto-redes{
+    display: inline-block;
+    margin:5vh 3vw;
+    font-size: 3vw;
+    text-decoration: none;
+    color: #061e80;
+    transition: color 0.7s linear 0.04s;
+    animation:contacto-scala 0.8s ease-in-out infinite; 
+
+}
+
+.contacto-redes:first-of-type{
+    color:#137803;
+}
+
+
+
+
+.contacto-redes:hover{
+    color: #ffffff;
+}
+
+@keyframes contacto-mov {
+    0%,100%{ transform:none; }
+    33%{ transform:translateY(-4px)}
+    66%{ transform:translateY(4px)}
+}
+
+@keyframes contacto-scala {
+    0%,100%{ transform:none; }
+    33%{ transform:scale(1)}
+    66%{ transform:scale(1.1)}
+}
+
+@media screen and (min-width: 1200px)
+{
+    .contacto-contenedor{
+        display: block ;    
+        
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+
+    .contacto-contenedor{
+        margin: 80px;
+        margin-top: 9vh; 
+            
+    }
+    .contenedor-info{
+        margin:0;
+        flex-direction: column;
+    }
+    .contenedor-encabezado{
+        width: 100%;
+    }
+
+    .contacto-titulo{
+   
+        font-size: 7vw;
+        text-align: center; 
+    }
+    .contacto-pie{
+        text-align:justify;
+        
+        font-size: 3vw;
+        margin: 0 90px;
+        margin-top: 3vw;
+    }
+
+    .contacto-medios{
+        text-align: center;
+        margin-left: 0;
+        padding: 2vw 0;
+        margin: 0 18vw;
+        margin-top: 9vh;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+    
+    }
+
+    .contacto-info h3{
+  
+        font-size: 4vw; 
+    }
+    .contacto-info {
+        
+        font-size: 3vw;
+        font-weight: 500;
+        
+    }
+    
+    .contacto-redes{
+     
+        font-size: 5vw;
+       
+    
+    }
+}
+
+@media screen and (max-width: 700px){
+    .contacto-contenedor{
+        
+        margin-top: 6vh; 
+            
+    }
+
+    .contacto-titulo{
+   
+        font-size: 10vw;
+    }
+    .contacto-pie{
+        font-size: 4vw;
+        margin: 0 80px;
+
+    }
+
+    .contacto-medios{
+        
+        margin: 0 8vw;
+        margin-top: 9vh;
+    
+    }
+
+    .contacto-info h3{
+  
+        font-size: 5vw; 
+    }
+    .contacto-info {
+        
+        font-size: 4vw;
+        font-weight: 500;
+        
+    }
+    
+    .contacto-redes{
+     
+        font-size: 7vw;
+       
+    
+    }
+}

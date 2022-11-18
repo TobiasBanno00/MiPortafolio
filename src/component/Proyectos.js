@@ -39,7 +39,8 @@ function Proyectos({estadoMenu}) {
     let enProceso={
         imagen:'fondoNegro.png',
         titulo: 'En proceso',
-        codigo:'www.github.com'
+        resumen:'Proximamente..',
+        codigo:''
     };
 
 

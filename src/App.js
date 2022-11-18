@@ -6,6 +6,7 @@ import SobreMi from './component/SobreMi'
 import Habilidades from './component/Habilidades'
 import Proyectos from './component/Proyectos'
 import Cargando from './component/Cargando'
+import Contacto from './component/Contacto'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; /* Routes=switch */
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/sobreMi" element={<SobreMi estadoMenu={estadoMenu}/>}/>
           <Route path="/habilidades" element={<Habilidades estadoMenu={estadoMenu}/>}/>
           <Route path="/proyectos" element={<Proyectos estadoMenu={estadoMenu}/>}/>
+          <Route path="/contacto" element={<Contacto estadoMenu={estadoMenu}/>}/>
           <Route path="*" component={NotFound}/>
         </Routes>
       </Router>

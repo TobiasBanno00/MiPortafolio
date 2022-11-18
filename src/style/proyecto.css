@@ -42,6 +42,7 @@
 
 .proyecto-imgAmpliada{
     width: 50vw;
+    height: 24vw;
     border: 1px solid rgb(61, 61, 61);
 }
 
@@ -61,7 +62,7 @@
     
 }
 .proyecto-contenedorInfo{
-    margin: 0 25vw;
+    width: 50vw;
     margin-top: 2vh;
     padding: 1vh 0;
     background-color: #1e1e1e;
@@ -137,19 +138,20 @@
 
     .proyecto-imgAmpliada{
         width: 80vw;
+        height:40vw;
         border: 1px solid rgb(61, 61, 61);
 
     }
 
     .proyecto-close{
         top: 110px;
-        right: 30px;
+        right: 25px;
         font-size: 60px;   
     }
     
     .proyecto-contenedorInfo{
         
-        margin: 0 10vw;  
+        width: 80vw; 
         margin-top: 2vh;
     }
  
@@ -183,12 +185,14 @@
 
    .proyecto-imgAmpliada{
     width: 90vw;
+    height: 45vw;
+
 }
 
 
 .proyecto-contenedorInfo{
     
-    margin: 0 5vw;  
+    width: 90vw; 
     margin-top: 2vh;
 }
 
