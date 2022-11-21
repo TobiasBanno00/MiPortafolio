@@ -184,28 +184,33 @@
    }
 
    .proyecto-imgAmpliada{
-    width: 90vw;
-    height: 45vw;
+        width: 90vw;
+        height: 45vw;
 
-}
+    }
+
+    .proyecto-close{
+        top: 110px;
+        right: 25px;
+        font-size: 40px;   
+    }
 
 
-.proyecto-contenedorInfo{
+    .proyecto-contenedorInfo{
     
-    width: 90vw; 
-    margin-top: 2vh;
-}
+        width: 90vw; 
+        margin-top: 2vh;
+    }
 
-.proyecto-info{
-    
-    font-size: 3.3vw;
-    
-}
+    .proyecto-info{
 
-.proyecto-pul{
-    font-size: 3.3vw;
+        font-size: 3.3vw;
+    }
+
+    .proyecto-pul{
+        font-size: 3.3vw;
     
-}
+    }
 
    
 }
