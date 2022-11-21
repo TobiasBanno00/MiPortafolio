@@ -169,8 +169,8 @@
 
 @media screen and (max-width: 700px){
     .proyecto-img{
-        width: 31vw;
-        height: 18vw;
+        width: 32vw;
+        height: 20vw;
     
         border: solid 1px #000000;
         cursor: pointer;

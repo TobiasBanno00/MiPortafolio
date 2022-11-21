@@ -63,7 +63,7 @@
     .proyectos-contenedorCuadricula{
 
         grid-template-columns: auto auto;
-        gap: 7vw;
+        gap: 6vw;
     
     }
 }

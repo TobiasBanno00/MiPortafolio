@@ -103,7 +103,7 @@
 {
 
     .contacto-contenedor{
-        margin: 80px;
+        margin: 60px;
         margin-top: 9vh; 
             
     }
@@ -121,7 +121,7 @@
         text-align: center; 
     }
     .contacto-pie{
-        text-align:justify;
+        text-align:left;
         
         font-size: 3vw;
         margin: 0 90px;
@@ -162,6 +162,7 @@
     .contacto-contenedor{
         
         margin-top: 6vh; 
+        margin: 30px;
             
     }
 
@@ -171,7 +172,8 @@
     }
     .contacto-pie{
         font-size: 4vw;
-        margin: 0 80px;
+        margin: 0 50px;
+        margin-top: 3vw;
 
     }
 

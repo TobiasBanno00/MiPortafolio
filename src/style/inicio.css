@@ -95,7 +95,7 @@
 
     .inicio-pie{
         font-size: 3vw;
-        text-align: center;
+        text-align: left;
 
     }
     
@@ -110,7 +110,7 @@
 
     .inicio-titulo{
         margin-left:4vw;
-        font-size: 8vw;
+        font-size: 7.5vw;
     }
 
     .inicio-titulo span{
@@ -121,7 +121,6 @@
 
     .inicio-pie{
         font-size: 5vw;
-        text-align: center;
 
     }
     
