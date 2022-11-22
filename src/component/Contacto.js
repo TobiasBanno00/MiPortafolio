@@ -23,9 +23,8 @@ function Contacto({estadoMenu}) {
                 <p className='contacto-pie'>No obstante, si tienes otra inquietud, no dudes en utilizar los diferentes medios para contactarme.</p>
             </div>
             <div className='contacto-medios'>
-                <p className='contacto-info'><h3> <BsFillPhoneVibrateFill/> </h3> +54 3564 339059 </p>
-                <p className='contacto-info'><h3><BsMailbox/> </h3> TobiasBanno@gmail.com </p>
-                <a className='contacto-redes' target="_blank" href='' ><BsWhatsapp/> </a>
+                <a className='contacto-redes'  href="mailto:tobiasbanno@gmail.com?Subject=Me%20interesa%20tu%20Perfil"><BsMailbox/></a>
+                <a className='contacto-redes' target="_blank" href='https://wa.me/543564339059?text=Hola!%20estoy%20interesado%20en%20tu%20perfil.' ><BsWhatsapp/> </a>
                 <a className='contacto-redes' target="_blank" href='https://www.linkedin.com/in/tobias-banno-1a2235252/' ><BsLinkedin/> </a>
                 <a className='contacto-redes' target="_blank" href='https://www.facebook.com/Tobi.Banno' ><BsFacebook/> </a>
             </div>

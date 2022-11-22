@@ -4,8 +4,9 @@
 }
 
     .contenedor-info{
-        margin-left:8vw;
+        margin-left:10vw;
         display: flex;
+        flex-direction: column;
     }
 
 .contenedor-encabezado{
@@ -30,53 +31,40 @@
 }
 
 .contacto-medios{
-    text-align: center;
-    margin-left: 9vw;
-    padding: 2vw 0;
-    margin-top: 5vh;
-    border: 1px solid #ffffff;
-    border-radius: 50px;
+    text-align: left;
+    margin-top: 12vh;
 
 }
 
-.contacto-info h3{
-    display: inline-block;
-    color: #fffcfc;
-    font-size: 3vw;
-    margin-right: 0.5vw;
-    margin-top:5vh;
-    margin-bottom:0;
-    
-    
-}
-
-.contacto-info {
-    color:rgb(131, 130, 130);
-    font-size: 1.7vw;
-    font-weight: 500;
-    
-}
 
 .contacto-redes{
     display: inline-block;
-    margin:5vh 3vw;
-    font-size: 3vw;
+    margin-right:5vw;
+    font-size: 3.5vw;
     text-decoration: none;
-    color: #061e80;
     transition: color 0.7s linear 0.04s;
     animation:contacto-scala 0.8s ease-in-out infinite; 
 
 }
+.contacto-redes:nth-child(1){
+    color:#ffffff;
+}
 
-.contacto-redes:first-of-type{
+.contacto-redes:nth-child(2){
     color:#137803;
 }
 
+.contacto-redes:nth-child(3){
+    color: #1127a4;
+}
 
+.contacto-redes:nth-child(4){
+    color: #0049d1;
+}
 
 
 .contacto-redes:hover{
-    color: #ffffff;
+    color: #696767;
 }
 
 @keyframes contacto-mov {
@@ -130,30 +118,13 @@
 
     .contacto-medios{
         text-align: center;
-        margin-left: 0;
-        padding: 2vw 0;
-        margin: 0 18vw;
-        margin-top: 9vh;
-        border: 1px solid #ffffff;
-        border-radius: 50px;
-    
+        margin-top: 15vh;
     }
 
-    .contacto-info h3{
-  
-        font-size: 4vw; 
-    }
-    .contacto-info {
-        
-        font-size: 3vw;
-        font-weight: 500;
-        
-    }
-    
     .contacto-redes{
      
-        font-size: 5vw;
-       
+        font-size:6vw;
+        margin-right:7vw;
     
     }
 }
@@ -179,25 +150,13 @@
 
     .contacto-medios{
         
-        margin: 0 8vw;
-        margin-top: 9vh;
+        margin-top: 16vh;
     
     }
 
-    .contacto-info h3{
-  
-        font-size: 5vw; 
-    }
-    .contacto-info {
-        
-        font-size: 4vw;
-        font-weight: 500;
-        
-    }
-    
     .contacto-redes{
      
-        font-size: 7vw;
+        font-size: 8vw;
        
     
     }
