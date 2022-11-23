@@ -6,7 +6,6 @@
     .contenedor-info{
         margin-left:10vw;
         display: flex;
-        flex-direction: column;
     }
 
 .contenedor-encabezado{
@@ -33,38 +32,57 @@
 .contacto-medios{
     text-align: left;
     margin-top: 12vh;
-
+    margin-left:8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .contacto-redes{
-    display: inline-block;
-    margin-right:5vw;
-    font-size: 3.5vw;
+    text-align: center;
+    margin-bottom: 4.5vh;
+    font-size: 1.5vw;
     text-decoration: none;
-    transition: color 0.7s linear 0.04s;
-    animation:contacto-scala 0.8s ease-in-out infinite; 
+    transition: background-color 0.7s linear 0.04s;
+    animation:contacto-scala 2s ease-in-out infinite; 
+    padding: 10px;
+    width: 13vw;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #787777;
+    cursor: pointer;
+    box-shadow: 5px 5px 3px #000000;
+    
+}
 
+.contacto-redes span{
+    color: #514e4e;
+    text-shadow: 0px 0px #1a1a1a, 0px -0px #121212, 0px -0px#1c1b1b, 0px 0px #131313, 0.15vw 0.15vw #1d1d1d;
 }
 .contacto-redes:nth-child(1){
-    color:#ffffff;
+    color:#a10606;
+    border: 1px solid #a10606;
 }
 
 .contacto-redes:nth-child(2){
     color:#137803;
+    border: 1px solid #137803;
 }
 
 .contacto-redes:nth-child(3){
     color: #1127a4;
+    border: 1px solid #1127a4;
 }
 
 .contacto-redes:nth-child(4){
     color: #0049d1;
+    border: 1px solid #0049d1;
 }
 
 
 .contacto-redes:hover{
-    color: #696767;
+    background-color: #101010;
 }
 
 @keyframes contacto-mov {
@@ -76,7 +94,7 @@
 @keyframes contacto-scala {
     0%,100%{ transform:none; }
     33%{ transform:scale(1)}
-    66%{ transform:scale(1.1)}
+    66%{ transform:scale(1.05)}
 }
 
 @media screen and (min-width: 1200px)
@@ -117,16 +135,17 @@
     }
 
     .contacto-medios{
-        text-align: center;
-        margin-top: 15vh;
+        margin-top: 10vh;
     }
 
     .contacto-redes{
-     
-        font-size:6vw;
-        margin-right:7vw;
+        width: 35vw;
+        font-size:5vw;
+        margin-bottom: 5vh;
     
     }
+ 
+    
 }
 
 @media screen and (max-width: 700px){
@@ -149,15 +168,13 @@
     }
 
     .contacto-medios{
-        
-        margin-top: 16vh;
-    
+        margin-top: 12vh;
     }
 
     .contacto-redes{
-     
-        font-size: 8vw;
-       
+        width: 42vw;
+        font-size:6.5vw;
+        margin-bottom: 5vh;
     
     }
 }
