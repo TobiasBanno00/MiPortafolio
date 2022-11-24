@@ -1,11 +1,12 @@
 import React,{useState} from 'react'
 import '../style/proyecto.css'
 import { AiFillCloseCircle } from 'react-icons/ai';
-
+import $ from 'jquery';
 
 function Proyecto({infoProyecto}) {
 
-    const [estadoImg, setEstadoImg] = useState(false);    //true amplamos img, false cerramos
+    /* AMPLIAMOS IMAGEN AL APRETAR SOBRE ELLA Y MOSTRAMOS DIFERENTES COSAS */
+    const [estadoImg, setEstadoImg] = useState(false);    //true ampliamos img, false cerramos
 
     let abrirImg=()=>
     {
@@ -17,8 +18,17 @@ function Proyecto({infoProyecto}) {
         setEstadoImg(false);
         document.querySelector('.proyecto-ampliado').classList.remove('proyecto-openImg')
     } 
-    
-  
+
+    /* MOSTRAMOS  O NO EL PULSADOR QUE NOS MOSTRARÁ NUESTRA PAGINA WEB DEL PROYECTO */
+    const [estadoPulSWeb, setPulSWeb] = useState(false); //true mostramos el boton, false no lo mostramos 
+    $(()=>{
+        if(infoProyecto.pagina==''){
+            setPulSWeb(false);
+        }
+        else{
+        setPulSWeb(true); 
+        }
+    });
 
   return (
     <div className='proyecto-contenedor'>
@@ -33,7 +43,7 @@ function Proyecto({infoProyecto}) {
             </div>
             <div className='proyecto-contenedorPul'>
                 <a target="_blank" href={infoProyecto.codigo}  className='proyecto-pul'>VER CÓDIGO</a>
-                <a target="_blank" href={infoProyecto.web}  className='proyecto-pul'>SITIO WEB</a>
+                <a target="_blank" href={infoProyecto.pagina}  className='proyecto-pul' style={{display: estadoPulSWeb?'block':'none'} }>SITIO WEB</a>
             </div>
         </div>
 

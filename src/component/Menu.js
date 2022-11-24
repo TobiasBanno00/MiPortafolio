@@ -1,6 +1,6 @@
 import React,{useState}from 'react'
 import '../style/menu.css'
-import TB from '../img/programador.png'
+import TB from '../img/TobiasBanno.png'
 import { FiAlignJustify } from "react-icons/fi";
 import $ from 'jquery';
 

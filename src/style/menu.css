@@ -16,7 +16,7 @@
 
 .imgMenu{
     margin: 4vh 0;
-    width: 180px;
+    width: 130px;
     border-radius: 5%;    
 }
 
@@ -105,8 +105,8 @@
    }
 
    .imgMenu{
-        min-width: 120px;
-        width: 22vh;
+        min-width: 110px;
+        width: 20vh;
     }
 
     .botonMenu{

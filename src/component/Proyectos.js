@@ -20,7 +20,7 @@ function Proyectos({estadoMenu}) {
         titulo: 'MI PORTAFOLIO',
         resumen: 'Proyecto propio, dónde se encuentra reflejado algo de lo que sé de JavaScript, React, html y  css,  mostrando información personal y proyectos que llevé a cabo.',
         codigo:'https://github.com/TobiasBanno00/MiPortafolio.git',
-        pagina:''
+        pagina:'https://portafolio-tobiasbanno.netlify.app/'
     };
 
     let impresiones={
