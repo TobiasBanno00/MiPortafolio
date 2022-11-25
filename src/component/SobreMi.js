@@ -22,7 +22,7 @@ function SobreMi({estadoMenu}) {
             <p className='sobreMi-info'>
                 Soy un técnico electrónico de 22 años al cual le interesó y apasionó la programación desde que la conoció. Iniciando con C, C++ y Arduino tanto en la secundaria cómo en la universidad, 
                 pero los mismos orientados a programas en consola y microcontroladores.<br/>
-                Actualmente estoy estudiando Ingenería en Sistemas y enfocandome en la programación web, queriendo obtener nuevos conocimientos e ir creciendo con estos. 
+                Actualmente estoy estudiando Ingeniería en Sistemas de Información y enfocandome en la programación web, queriendo obtener nuevos conocimientos e ir creciendo con estos. 
             </p>
 
             <h1 className='sobreMi-titulo'>Me considero..</h1>
