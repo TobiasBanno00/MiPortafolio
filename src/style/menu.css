@@ -1,4 +1,4 @@
-.menu{
+.menu-contenedor{
     /* margin: 1.5vh 8px; */
     
     position: fixed;
@@ -14,13 +14,13 @@
 }
 
 
-.imgMenu{
+.menu-img{
     margin: 4vh 0;
     width: 110px;
     border-radius: 5%;    
 }
 
-.botonMenu{
+.menu-boton{
     
     width: 100%;
     text-align: center;
@@ -34,18 +34,33 @@
     
 }
 
-.botonMenu:nth-child(5){
+.menu-boton:nth-child(5){
     border-bottom: 1px solid #1e1e1e;
 }
 
 
-.botonMenu:hover{
+.menu-boton:hover{
     color: #87c6e4;
     font-size: 25px;
 }
 
 .menu-pagActual{
     color:#87c6e4
+}
+
+.menu-contenedorRedes{
+    display: flex;
+    
+    
+}
+
+.menu-redes{
+    margin: 30px 15px;
+    font-size: 30px;
+    color: #87c6e4;
+}
+.menu-redes:hover{
+    font-size: 33px;
 }
 
 /* RESPONSIVEEEE */
@@ -61,12 +76,12 @@
     flex-direction: column;
 }
 
-.openMenu{
+.menu-open{
     display: flex;
 }
 
 
-.hamburger{
+.menu-hamburger{
     z-index: 4;
     display: none;
     color: #ffffff;
@@ -88,7 +103,7 @@
 
 @media screen and (max-width: 600px)
 {   
-    .hamburger{
+    .menu-hamburger{
         font-size: 50px;
     }
 }
@@ -96,23 +111,31 @@
 
 @media screen and (max-width: 1200px)
 {
-    .menu{
+    .menu-contenedor{
         display: none;
     }
 
-   .hamburger{
+   .menu-hamburger{
         display: block;
    }
 
-   .imgMenu{
+   .menu-img{
         min-width: 110px;
         width: 18vh;
     }
 
-    .botonMenu{
+    .menu-boton{
         background-color: #000000;
     }
+
+    .menu-redes{
+        margin: 5vh 5vw;
+        font-size: 5vh;
+    }
     
+    .menu-redes:hover{
+        font-size: 6vh;
+    }
 
 
 }
