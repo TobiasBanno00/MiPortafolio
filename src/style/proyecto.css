@@ -1,6 +1,6 @@
 .proyecto-contenedor{
     margin: 0;
-    display:flex ;
+    display:flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.514);
@@ -10,10 +10,8 @@
 .proyecto-img{
     width: 20vw;
     height: 10vw;
-
     border: solid 1px #000000;
     cursor: pointer;
-
 }
 
 .proyecto-pie{
@@ -29,7 +27,7 @@
 
 .proyecto-ampliado{
     position: fixed;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -107,16 +105,31 @@
     background-color: rgb(120, 0, 0);
 }
 
-@keyframes proyecto-abreImg{
+.proyecto-abrir {
+    animation: proyecto-abrir 0.3s ease;
+  }
 
-    0%{
-        transform:translatex(100%);
-    }
+.proyecto-cerrar {
+    animation: proyecto-cerrar 0.3s ease;
+  }
 
-    100%{
-        transform:translatex(0);  
+  @keyframes proyecto-abrir {
+    from {
+      transform: scale(0);
     }
-}
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes proyecto-cerrar {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0);
+    }
+  }
 
 /* RESPONSIVEEEE */
 

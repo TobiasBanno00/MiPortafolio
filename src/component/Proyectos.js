@@ -58,8 +58,6 @@ function Proyectos({estadoMenu}) {
             <Proyecto infoProyecto={enProceso}/>
             <Proyecto infoProyecto={enProceso}/>
             <Proyecto infoProyecto={enProceso}/>
-
-
         </div>
     </div>
 
