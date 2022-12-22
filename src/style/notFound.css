@@ -1,0 +1,43 @@
+.notFound-contenedor{
+    
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    background-color: #252222;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+
+}
+
+
+.notFound-img{
+    position: absolute;
+    width: 220px;
+
+}
+
+.notFound-titulo{
+    position: absolute;
+    top:20vh;
+    font-size: 50px;
+    color: rgb(65, 65, 65);
+
+}
+
+.notFound-circuloCarga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #87c6e4;
+    border: 13px solid #9c0404;
+
+    
+    
+}

@@ -1,45 +1,48 @@
 import './App.css';
-import React,{useState} from 'react';
+import { createRoot} from "react-dom/client";
+import React,{useState, useEffect} from 'react';
 import Menu from './component/Menu'
-import Inicio from './component/Inicio'
-import SobreMi from './component/SobreMi'
-import Habilidades from './component/Habilidades'
-import Proyectos from './component/Proyectos'
 import Cargando from './component/Cargando'
-import Contacto from './component/Contacto'
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; /* Routes=switch */
+import Rutas from './component/Rutas';
+import { useLocation } from 'react-router-dom';   // Solo se puede usar dentro del enrutado, por eso enruto en el index
+
+
 
 function App() {
 
- const [estadoMenu, setEstadoMenu] = useState(false);   {/* Si el menu está abierto estará en true sino en false */}
+ const [estadoMenu, setEstadoMenu] = useState(false);   {/* Si el menu Responsivo está abierto estará en true sino en false */}
  let setEMenu =(estado)=> {
   setEstadoMenu(estado)
   console.log(estadoMenu)
  }
 
- let NotFound=()=>{return <>Pagina no existente</>;}
+ let location = useLocation();                             // Ruta dónde nos encontramos
+
+ //----------------------------------------------------CAMBIO DE RUTA
+ let cambiarRuta =()=>{
+  const rutas = document.createElement("div");    
+        rutas.id = "rutas";
+        document.body.appendChild(rutas);           
+        const root = createRoot(rutas);  
+        
+  root.render( )
+  
+ } 
+ 
+ useEffect(()=>{
+  setTimeout( cambiarRuta , 500);
+ },location) 
+
+
+ 
+ 
 
   return (
-    <>
-    
-      <Menu setEMenu={setEMenu}/> 
-      
-      <Router>
-      <Cargando/>
-        <Routes>
-          <Route path="/" element={<Inicio estadoMenu={estadoMenu}/>}/>
-          <Route path="/sobreMi" element={<SobreMi estadoMenu={estadoMenu}/>}/>
-          <Route path="/habilidades" element={<Habilidades estadoMenu={estadoMenu}/>}/>
-          <Route path="/proyectos" element={<Proyectos estadoMenu={estadoMenu}/>}/>
-          <Route path="/contacto" element={<Contacto estadoMenu={estadoMenu}/>}/>
-          <Route path="*" component={NotFound}/>
-        </Routes>
-      </Router>
-   
-
-
-      
-   </>
+      <>
+      <Cargando location={location}/>
+      <Menu setEMenu={setEMenu}/>
+      <Rutas estadoMenu={estadoMenu}/> 
+      </>
   );
 }
 

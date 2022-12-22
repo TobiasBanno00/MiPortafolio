@@ -1,4 +1,5 @@
 import React,{useState}from 'react'
+import { useLocation,Link} from "react-router-dom"
 import '../style/menu.css'
 import TB from '../img/TobiasBanno.png'
 import { FiAlignJustify } from "react-icons/fi";
@@ -8,7 +9,8 @@ import $ from 'jquery';
 function Menu({setEMenu}) {
 
   /* agregamos estilo en la parte del menu que nos encontramos */
-  const [pathname, setPathname] = useState(window.location.pathname);
+  const { pathname } = useLocation();
+  /*
   $(()=>{
 
     switch (pathname) {
@@ -35,7 +37,7 @@ function Menu({setEMenu}) {
       default:
         break;
     }
-  });
+  }); */
 
     /* activamos o desactivamos menu responsivos */
     function manejoMenu(){
@@ -53,11 +55,11 @@ function Menu({setEMenu}) {
     <nav>
         
         <div className='menu-contenedor'>
-            <a href='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></a>
-            <a href='/sobreMi' id='sobreMi' className='menu-boton'> Sobre mi</a>
-            <a href='/habilidades' id='habilidades'className='menu-boton'>Habilidades</a>
-            <a href='/proyectos' id='proyectos'className='menu-boton'>Proyectos</a>
-            <a href='/contacto' id='contacto' className='menu-boton'>Contacto</a>
+            <Link to='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></Link>
+            <Link to='/sobreMi' id='sobreMi' className='menu-boton'> Sobre mi</Link>
+            <Link to='/habilidades' id='habilidades'className='menu-boton'>Habilidades</Link>
+            <Link to='/proyectos' id='proyectos'className='menu-boton'>Proyectos</Link>
+            <Link to='/contacto' id='contacto' className='menu-boton'>Contacto</Link>
             <div className='menu-contenedorRedes'>
               <a className='menu-redes' target="_blank" href='https://github.com/TobiasBanno00'><BsGithub/></a>
               <a className='menu-redes' target="_blank" href='https://www.linkedin.com/in/tobias-banno-1a2235252/'><BsLinkedin/></a>    
@@ -69,11 +71,11 @@ function Menu({setEMenu}) {
 
         <div className='menu-hamburger' onClick={manejoMenu}> <a><FiAlignJustify/></a></div>
         <div className='menu-resp'>
-            <a href='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></a>
-            <a href='/sobreMi' id='sobreMiResp' className='menu-boton'> Sobre mi</a>
-            <a href='/habilidades' id='habilidadesResp' className='menu-boton'>Habilidades</a>
-            <a href='/proyectos' id='proyectosResp'className='menu-boton'>Proyectos</a>
-            <a href='/contacto' id='contactoResp'className='menu-boton'>Contacto</a>
+            <Link href='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></Link>
+            <Link href='/sobreMi' id='sobreMiResp' className='menu-boton'> Sobre mi</Link>
+            <Link href='/habilidades' id='habilidadesResp' className='menu-boton'>Habilidades</Link>
+            <Link href='/proyectos' id='proyectosResp'className='menu-boton'>Proyectos</Link>
+            <Link href='/contacto' id='contactoResp'className='menu-boton'>Contacto</Link>
             <div className='menu-contenedorRedes'>
               <a className='menu-redes' target="_blank" href='https://github.com/TobiasBanno00'><BsGithub/></a>
               <a className='menu-redes' target="_blank" href='https://www.linkedin.com/in/tobias-banno-1a2235252/'><BsLinkedin/></a>    

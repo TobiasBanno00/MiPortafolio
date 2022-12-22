@@ -23,9 +23,9 @@ function Proyecto({infoProyecto}) {
     {   
         const proyectoAmpli = document.createElement("div");    // creamos div
         proyectoAmpli.id = "proyectoAmpliado";
-        document.body.appendChild(proyectoAmpli);            // agregamos el div como ultimo elemento de la hoja
-        const root = createRoot(proyectoAmpli);  // createRoot(CONTENEDOR)
-        root.render(                            // LO QUE RENDERIZO
+        document.body.appendChild(proyectoAmpli);            
+        const root = createRoot(proyectoAmpli);  
+        root.render(                            
 
             <div className='proyecto-ampliado proyecto-abrir' ref={refImgAmpl}>
                 <img src={require(`../img/proyectos/${infoProyecto.imagen}`)} className="proyecto-imgAmpliada" />
