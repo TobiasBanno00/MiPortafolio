@@ -15,6 +15,14 @@ function Proyectos({estadoMenu}) {
       });
       
     
+    let tobban={
+        imagen:'redsocial.png',
+        titulo: 'Tobban',
+        resumen: '-EN CONSTRUCCIÓN- Red social copia de twitter, usando tecnologias como React, Golang y MongoDB',
+        codigo:'https://github.com/TobiasBanno00/RedSocial',
+        pagina:''
+    };
+
     let miPortafolio={
         imagen:'miPortafolio.png',
         titulo: 'MI PORTAFOLIO',
@@ -26,7 +34,7 @@ function Proyectos({estadoMenu}) {
     let impresiones={
         imagen:'impresiones3d.png',
         titulo: 'IMPRESIONES 3D',
-        resumen: 'Proyecto propio, primera pagina web echa por mi en react, echa para practicar. No terminada le falta bastante por hacer.',
+        resumen: 'Proyecto propio, primera pagina web echa por mi en react, hecha para practicar. No terminada.',
         codigo:'https://github.com/TobiasBanno00/3Deseos.git',
         pagina:''
     };
@@ -34,7 +42,7 @@ function Proyectos({estadoMenu}) {
     let tallerMecanico={
         imagen:'tallerMecanico.png',
         titulo: 'TALLER MECÁNICO',
-        resumen: 'Proyecto propio, en proceso todavía no terminado, se hizo tanto el frontend cómo el backend. Pagina para taller mecanico, dónde se podrá sacar turnos y ver lo que se le hizo al automovil.',
+        resumen: '-EN CONSTRUCCIÓN- Pagina para taller mecanico, dónde se podrá sacar turnos y ver lo que se le hizo al automovil. Tecnologias usadas: React, NodeJs y MySQL',
         codigo:'https://github.com/TobiasBanno00/Negocio.git',
         pagina:''
     };
@@ -52,10 +60,10 @@ function Proyectos({estadoMenu}) {
     <div className='proyectos-contenedor'>
         <h1 className='proyectos-titulo'>Proyectos y código</h1>
         <div className='proyectos-contenedorCuadricula'>
+            <Proyecto infoProyecto={tobban}/>
             <Proyecto infoProyecto={miPortafolio}/>
             <Proyecto infoProyecto={tallerMecanico}/>
             <Proyecto infoProyecto={impresiones}/>
-            <Proyecto infoProyecto={enProceso}/>
             <Proyecto infoProyecto={enProceso}/>
             <Proyecto infoProyecto={enProceso}/>
         </div>

@@ -17,7 +17,7 @@
    
 }
 .habilidades-titulo{
-    margin: 7vh 5vw;
+    margin: 1vh 5vw;
     margin-bottom: 0;
     text-align:left;
     font-size: 4vw;
@@ -135,9 +135,13 @@
 
     .habilidades-skill{
 
-        font-size: 5vw;
+        width: 8vw;
       
     }
+
+    .habilidades-skill:nth-child(6){animation:movX 2s linear  alternate-reverse infinite; width: 12vw;}      /*GO*/
+    .habilidades-skill:nth-child(9){animation: movXY 2s linear 1s alternate-reverse infinite; width: 12vw;}  /*nodejs*/
+    .habilidades-skill:nth-child(10){animation: movXY2 3s linear 1s alternate-reverse infinite; width: 13vw;} /*mysql*/
 
     @keyframes movY{
         from{ transform: translateY(-15vh)}
@@ -172,7 +176,8 @@
     }
 
     .habilidades-titulo{
-  
+        
+        margin-top: 5vh;
         font-size: 10vw;
 
     }
@@ -193,9 +198,12 @@
 
     .habilidades-skill{
 
-        font-size: 6vw;
+        width: 11vw;
       
     }
+    .habilidades-skill:nth-child(6){animation:movX 2s linear  alternate-reverse infinite; width: 14vw;}      /*GO*/
+    .habilidades-skill:nth-child(9){animation: movXY 2s linear 1s alternate-reverse infinite; width: 14vw;}  /*nodejs*/
+    .habilidades-skill:nth-child(10){animation: movXY2 3s linear 1s alternate-reverse infinite; width: 15vw;} /*mysql*/
 
     @keyframes movY{
         from{ transform: translateY(-14vh)}
