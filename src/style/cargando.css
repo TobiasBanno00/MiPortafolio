@@ -10,8 +10,9 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
-    transform:translatey(-100%);
-    animation: cargando-empieza 0.5s  linear both, cargando-termina 0.5s 1.5s  linear both;
+    /* transform:translatey(-100%);*/
+    animation:  cargando-termina 0.5s 1s  linear both;
+    /*animation: cargando-empieza 0.5s  linear both, cargando-termina 0.5s 1.5s  linear both;*/
 
 }
 

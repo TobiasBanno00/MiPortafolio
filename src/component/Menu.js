@@ -1,4 +1,4 @@
-import React,{useState}from 'react'
+import React from 'react'
 import { useLocation,Link} from "react-router-dom"
 import '../style/menu.css'
 import TB from '../img/TobiasBanno.png'
@@ -55,7 +55,8 @@ function Menu({setEMenu}) {
     <nav>
         
         <div className='menu-contenedor'>
-            <Link to='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></Link>
+          
+            <Link  to="/"  replace={false}><img className='menu-img'  src={TB} alt='Tobias Banno' /></Link>
             <Link to='/sobreMi' id='sobreMi' className='menu-boton'> Sobre mi</Link>
             <Link to='/habilidades' id='habilidades'className='menu-boton'>Habilidades</Link>
             <Link to='/proyectos' id='proyectos'className='menu-boton'>Proyectos</Link>

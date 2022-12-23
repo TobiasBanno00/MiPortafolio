@@ -1,6 +1,6 @@
 import './App.css';
-import { createRoot} from "react-dom/client";
-import React,{useState, useEffect} from 'react';
+
+import React,{useState} from 'react';
 import Menu from './component/Menu'
 import Cargando from './component/Cargando'
 import Rutas from './component/Rutas';
@@ -18,24 +18,6 @@ function App() {
 
  let location = useLocation();                             // Ruta dónde nos encontramos
 
- //----------------------------------------------------CAMBIO DE RUTA
- let cambiarRuta =()=>{
-  const rutas = document.createElement("div");    
-        rutas.id = "rutas";
-        document.body.appendChild(rutas);           
-        const root = createRoot(rutas);  
-        
-  root.render( )
-  
- } 
- 
- useEffect(()=>{
-  setTimeout( cambiarRuta , 500);
- },location) 
-
-
- 
- 
 
   return (
       <>
