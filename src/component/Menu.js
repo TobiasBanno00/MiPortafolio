@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useLocation,Link} from "react-router-dom"
 import '../style/menu.css'
 import TB from '../img/TobiasBanno.png'
@@ -6,10 +6,10 @@ import { FiAlignJustify } from "react-icons/fi";
 import {BsGithub,BsLinkedin} from "react-icons/bs";
 import $ from 'jquery';
 
-function Menu({setEMenu}) {
+function Menu({setEMenu, location}) {
 
   /* agregamos estilo en la parte del menu que nos encontramos */
-  const { pathname } = useLocation();
+  
   /*
   $(()=>{
 
@@ -39,6 +39,15 @@ function Menu({setEMenu}) {
     }
   }); */
 
+    /* Cada vez que actualizamos la pagina cerramos menu responsivo*/
+    let cerrarMenu =()=>{
+      document.querySelector('.menu-resp').classList.remove('menu-open');
+      setEMenu(false)  
+      console.log("entro")
+    }
+    useEffect(cerrarMenu,[location]) 
+    
+    
     /* activamos o desactivamos menu responsivos */
     function manejoMenu(){
       if(document.querySelector('.menu-resp').classList.contains('menu-open')){
@@ -72,11 +81,11 @@ function Menu({setEMenu}) {
 
         <div className='menu-hamburger' onClick={manejoMenu}> <a><FiAlignJustify/></a></div>
         <div className='menu-resp'>
-            <Link href='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></Link>
-            <Link href='/sobreMi' id='sobreMiResp' className='menu-boton'> Sobre mi</Link>
-            <Link href='/habilidades' id='habilidadesResp' className='menu-boton'>Habilidades</Link>
-            <Link href='/proyectos' id='proyectosResp'className='menu-boton'>Proyectos</Link>
-            <Link href='/contacto' id='contactoResp'className='menu-boton'>Contacto</Link>
+            <Link to='/'><img className='menu-img'  src={TB} alt='Tobias Banno' /></Link>
+            <Link to='/sobreMi' id='sobreMiResp' className='menu-boton'> Sobre mi</Link>
+            <Link to='/habilidades' id='habilidadesResp' className='menu-boton'>Habilidades</Link>
+            <Link to='/proyectos' id='proyectosResp'className='menu-boton'>Proyectos</Link>
+            <Link to='/contacto' id='contactoResp'className='menu-boton'>Contacto</Link>
             <div className='menu-contenedorRedes'>
               <a className='menu-redes' target="_blank" href='https://github.com/TobiasBanno00'><BsGithub/></a>
               <a className='menu-redes' target="_blank" href='https://www.linkedin.com/in/tobias-banno-1a2235252/'><BsLinkedin/></a>    

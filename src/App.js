@@ -22,7 +22,7 @@ function App() {
   return (
       <>
       <Cargando location={location}/>
-      <Menu setEMenu={setEMenu}/>
+      <Menu setEMenu={setEMenu} location={location}/>
       <Rutas estadoMenu={estadoMenu}/> 
       </>
   );
