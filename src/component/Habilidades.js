@@ -2,6 +2,18 @@ import React from 'react'
 import '../style/habilidades.css'
 import $ from 'jquery';
 
+import cmasmas from '../img/skills/c++.png'
+import css from '../img/skills/css.png'
+import html from '../img/skills/html.png'
+import git from '../img/skills/git.png'
+import github from '../img/skills/github.png'
+import go from '../img/skills/go.png'
+import javascript from '../img/skills/javascript.png'
+import mongo from '../img/skills/mongo.png'
+import mysql from '../img/skills/mysql.png'
+import nodejs from '../img/skills/nodejs.png'
+import react from '../img/skills/react.png'
+
 function habilidades({estadoMenu}) {
 
   $(()=>{
@@ -24,17 +36,19 @@ function habilidades({estadoMenu}) {
             <p className='habilidades-data'> Todavía me falta mucho que aprender y experimentar, todos los días se aprende algo nuevo.</p>
         </div>
         <div className='habilidades-contSkills'>
-        <h3 className='habilidades-skill'>Git/GitHub</h3>
-        <h3 className='habilidades-skill'>C/C++</h3>
-          <h3 className='habilidades-skill'>HTML</h3>
-          <h3 className='habilidades-skill'>JavaScript</h3>
-          <h3 className='habilidades-skill'>CSS</h3>
-          <h3 className='habilidades-skill'>React Js</h3>
-          <h3 className='habilidades-skill'>Node Js</h3>
-          <h3 className='habilidades-skill'>MySql</h3>
+        <img className='habilidades-skill'  src={cmasmas}/>
+        <img className='habilidades-skill'  src={html}/>
+        <img className='habilidades-skill'  src={css}/>
+        <img className='habilidades-skill'  src={git}/>
+        <img className='habilidades-skill'  src={github}/>
+        <img className='habilidades-skill'  src={go}/>
+        <img className='habilidades-skill'  src={javascript}/>
+        <img className='habilidades-skill'  src={mongo}/>
+        <img className='habilidades-skill'  src={nodejs}/>
+        <img className='habilidades-skill'  src={mysql}/>
+        <img className='habilidades-skill'  src={react}/>
        
-
-
+       
         </div>
         
 

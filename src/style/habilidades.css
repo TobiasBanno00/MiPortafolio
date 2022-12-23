@@ -57,76 +57,25 @@
 .habilidades-skill{
     position: absolute;
     margin: 5vh 2vw;
-    font-size: 3vw;
+    width: 5vw;
     font-weight: 700;
     color: #fff;
     text-shadow: 0px 0px #000000, 0px -0px #000000, 0px -0px#000000, 0px 0px #000000, 0.2vw 0.2vw #000000;
 }
 
-.habilidades-skill:nth-child(1){
-    animation: movXY 3s linear 1s alternate-reverse infinite, cambioColor1 5s linear 2s alternate-reverse  infinite;
+.habilidades-skill:nth-child(1){animation: movXY 1.5s linear 1s alternate-reverse infinite;} /*C++*/
+.habilidades-skill:nth-child(2){animation:movXY 2s linear  alternate-reverse infinite;}      /*HTML*/
+.habilidades-skill:nth-child(3){animation:movXY2 1.5s linear  alternate-reverse infinite;}  /*CSS*/
+.habilidades-skill:nth-child(4){animation:movXY2 2s linear  alternate-reverse infinite;}    /*GIT*/
+.habilidades-skill:nth-child(5){animation:movX 4s linear 0.5s  alternate-reverse infinite;} /*GITHUB*/
+.habilidades-skill:nth-child(6){animation:movX 2s linear  alternate-reverse infinite; width: 8vw;}      /*GO*/
+.habilidades-skill:nth-child(7){animation:movY 2s linear  alternate-reverse infinite;}      /*JAVA*/
+.habilidades-skill:nth-child(8){animation:movY 3s linear 0.5s alternate-reverse infinite;} /*mongo*/
+.habilidades-skill:nth-child(9){animation: movXY 2s linear 1s alternate-reverse infinite; width: 8vw;}  /*nodejs*/
+.habilidades-skill:nth-child(10){animation: movXY2 3s linear 1s alternate-reverse infinite; width: 9vw;} /*mysql*/
+.habilidades-skill:nth-child(11){animation: movY 2s linear 1s alternate-reverse infinite;}  /*React*/
 
 
-}
-
-.habilidades-skill:nth-child(2){
-    
-    animation:movXY 2s linear 0.5s alternate-reverse infinite, cambioColor2 5s linear  alternate-reverse  infinite;
-    
-}
-
-.habilidades-skill:nth-child(3){
-    
-    animation:movXY2 3s linear  alternate-reverse infinite, cambioColor2 10s linear 2s alternate-reverse  infinite;
-}
-
-.habilidades-skill:nth-child(4){
-
-    animation:movXY2 2s linear 1.5s alternate-reverse infinite, cambioColor1 10s linear alternate-reverse  infinite;
-    
-}
-
-.habilidades-skill:nth-child(5){
-
-    animation:movX 4s linear 0.5s  alternate-reverse infinite, cambioColor3 5s linear alternate-reverse  infinite;
-    
-}
-
-.habilidades-skill:nth-child(6){
-
-    animation:movX 2s linear  alternate-reverse infinite, cambioColor2 7.5s linear  alternate-reverse  infinite;
-   
-}
-
-.habilidades-skill:nth-child(7){
-
-    animation:movY 2s linear  alternate-reverse infinite, cambioColor1 7.5s linear 2s alternate-reverse  infinite;
-   
-}
-
-.habilidades-skill:nth-child(8){
-
-    animation:movY 3s linear 0.5s alternate-reverse infinite,cambioColor3 10s linear 2s alternate-reverse  infinite;
-    
-}
-
-@keyframes cambioColor1{
-    from {color: #04216a;} 
-
-  to {color: #379cfa;} 
-}
-
-@keyframes cambioColor2{
-    from {color: #d70c0c;} 
-
-    to {color: #440505;} 
-  }
-
-  @keyframes cambioColor3{
-    from {color: #ffffff;} 
-
-    to {color: #4a4a4c;} 
-  }
 
 
  @keyframes movY{
